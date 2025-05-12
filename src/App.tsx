@@ -67,37 +67,24 @@ export const App = () => {
       </div>
 
       <div className={appSt.container} style={{ backgroundColor: '#fff' }}>
-        <div>
-          <Typography.TitleResponsive style={{ marginTop: '1rem' }} tag="h1" view="small" font="system" weight="semibold">
-            Что мы прогнозируем
+        <Typography.TitleResponsive style={{ marginTop: '1rem' }} tag="h1" view="small" font="system" weight="semibold">
+          Что мы прогнозируем
+        </Typography.TitleResponsive>
+
+        <div className={appSt.row}>
+          <Typography.TitleResponsive tag="h2" view="large" font="system" weight="medium">
+            +25%
           </Typography.TitleResponsive>
-          <Typography.Text view="primary-medium" tag="p" defaultMargins={false}>
-            В течение 2–4 недель
+          <Typography.Text style={{ marginBottom: '4px' }} view="secondary-large" tag="p" defaultMargins={false}>
+            С плечом
           </Typography.Text>
         </div>
 
-        <Grid.Row>
-          <Grid.Col width="6">
-            <div className={appSt.box}>
-              <Typography.TitleResponsive tag="h2" view="large" font="system" weight="medium">
-                +25%
-              </Typography.TitleResponsive>
-              <Typography.Text view="secondary-large" tag="p" defaultMargins={false}>
-                С плечом
-              </Typography.Text>
-            </div>
-          </Grid.Col>
-          <Grid.Col width="6">
-            <div className={appSt.box}>
-              <Typography.TitleResponsive tag="h2" view="large" font="system" weight="medium">
-                +11.75%
-              </Typography.TitleResponsive>
-              <Typography.Text view="secondary-large" tag="p" defaultMargins={false}>
-                Без плеча
-              </Typography.Text>
-            </div>
-          </Grid.Col>
-        </Grid.Row>
+        <div className={appSt.box}>
+          <Typography.Text view="primary-small" color="secondary" tag="p" defaultMargins={false}>
+            без плеча: +11.75% за 4–6 месяцев
+          </Typography.Text>
+        </div>
 
         <Grid.Row>
           <Grid.Col width="6">
